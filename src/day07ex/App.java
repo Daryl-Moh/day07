@@ -4,41 +4,19 @@ public class App {
 
     private String name;
     private String category;
-    private float rating;
+    private Float rating;
 
-    public App(String name, String category, float rating) {
-        this.name = name;
-        this.category = category;
-        this.rating = rating;
-    }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 
-    public String getName() {
-        return name;
-    }
+    public String getCategory() { return category; }
+    public void setCategory(String category) { this.category = category; }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public Float getRating() { return rating; }
+    public void setRating(Float rating) { this.rating = rating; }
 
-    public String getCategory() {
-        return category;
+    @Override
+    public String toString() {
+        return "App [name=" + name + ", category=" + category + ", rating=" + rating + "]";
     }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public float getRating() {
-        return rating;
-    }
-
-    public void setRating(float rating) {
-        this.rating = rating;
-    }
-    
-    
-    
-    
-   
-  
 }
